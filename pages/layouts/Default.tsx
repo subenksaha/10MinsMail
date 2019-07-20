@@ -4,10 +4,10 @@ import { Fragment, Component, useState } from 'react';
 
 const { Content, Footer, Header } = Layout;
 
-import '../../../i18n';
+import '../../i18n';
 
-import Navbar from './Navbar';
-import Footbar from './Footbar';
+import Navbar from './components/Navbar';
+import Footbar from './components/Footbar';
 
 function DefaultLayout(props: {children: any, title?: string, description?: string}) {
 
@@ -44,7 +44,7 @@ function DefaultLayout(props: {children: any, title?: string, description?: stri
 			<Content>
 				{props.children}
 			</Content>
-			<Footer>
+			<Footer style={{backgroundColor: '#FFCCBC'}}>
 				<Footbar/>
 			</Footer>
 		</Layout>

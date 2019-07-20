@@ -8,8 +8,8 @@ function MailBox() {
 
 	return (
 		<Row type='flex' style={{minHeight: '600px'}}>
-			<Col md={{span: 6}} xs={{span: 0}}>2</Col>
-			<Col md={{span: 12}} xs={{span: 24}}>
+			<Col md={{span: 4}} xs={{span: 0}}>2</Col>
+			<Col md={{span: 14}} xs={{span: 24}}>
 				<Card
 					title={
 					<Row type='flex' >

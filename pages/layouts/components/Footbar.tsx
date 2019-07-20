@@ -1,7 +1,7 @@
 import { Fragment, useContext } from 'react';
 import { Row, Col, Button, Divider, Layout } from 'antd';
 const { Footer } = Layout;
-import Link from 'next/link';
+import { Link } from '../../../i18n';
 
 const languages = {
 	ar: 'Arabic',
@@ -35,10 +35,18 @@ function Footbar(props: any) {
 			</Row >
 			<Divider>{`© ${new Date().getFullYear()} TempMailApp.com`}</Divider>
 			<Row type='flex' justify='center'>
-				<Button type='link' href='/privacy'>Privacy</Button>
-				<Button type='link' href='/faq'>FAQ</Button>
-				<Button type='link' href='/tos'>Terms Of Service</Button>
-				<Button type='link' href='/contacts'>Contacts</Button>
+				<Link href='/privacy'>
+					<Button type='link'>Privacy</Button>
+				</Link>
+				<Link href='/faq'>
+					<Button type='link'>FAQ</Button>
+				</Link>
+				<Link href='/tos'>
+					<Button type='link'>TOS</Button>
+				</Link>
+				<Link href='/contact'>
+					<Button type='link'>Contact</Button>
+				</Link>
 			</Row>
 		</Fragment>
 	);

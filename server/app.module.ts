@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
 import { RenderModule } from 'nest-next';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { EmailModule } from './email/email.module';
 import { MongooseModule } from '@nestjs/mongoose';
-import { PagesModule } from './pages/pages.module';
+import { PagesModule } from './page/page.module';
 
 @Module({
 	imports: [
@@ -18,7 +16,7 @@ import { PagesModule } from './pages/pages.module';
 		EmailModule,
 		PagesModule,
 	],
-	controllers: [AppController],
-	providers: [AppService],
+	controllers: [],
+	providers: [],
 })
 export class AppModule {}

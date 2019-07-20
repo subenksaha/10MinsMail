@@ -7,7 +7,7 @@ interface Props {
 class Adsense extends Component<Props> {
 	render() {
 		const { height, width} = this.props;
-		return (<div style={{height: `${height}px`, width: `${width}px`, border: '1px solid black'}}>
+		return (<div style={{height: `${height}px`, width: `${width}px`}}>
 			Adsense
 		</div>);
 	}

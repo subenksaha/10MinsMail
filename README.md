@@ -1,1 +1,3 @@
-# Next js + Nest js + antd + monolith starter
+# 10minsmail.com repo
+
+[10 Mins Mail](10minsmail.com)

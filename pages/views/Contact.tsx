@@ -5,17 +5,13 @@ const { Content } = Layout;
 
 import DefaultLayout from '../layouts/Default';
 
-const metaDescription = 'Temp Mail app provides free, disposable email' +
-' address to keep hackers, marketer, spammers out from your real email address.' +
-' You can use this email addresss for signup in facebook or any service provider';
-
-function Privacy(props: any) {
+function Contact(props: any) {
 
 	return (
 		<DefaultLayout description={metaDescription}>
 			<Head>
 				<title>{props.title}</title>
-				<meta name='description' content='Privacy policy of 10 mins mail'/>
+				<meta name='description' content='Contact 10 mins mail'/>
 			</Head>
 			<Content style={{margin: '50px 100px', backgroundColor: '#FFF'}}>
 				<Row>
@@ -59,11 +55,11 @@ function Privacy(props: any) {
 	);
 
 }
-Privacy.getInitialProps = async ({err, req, res, pathname, query, asPath}) => {
+Contact.getInitialProps = async ({err, req, res, pathname, query, asPath}) => {
 
 	return {
 		namespacesRequired: ['common'],
 		...query,
 	};
 };
-export default Privacy;
+export default Contact;

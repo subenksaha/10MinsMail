@@ -38,6 +38,10 @@ function EmailGenerator(props: any ) {
 								addonAfter={DomainSelect}
 								addonBefore={<Icon type='user' style={{color: 'black', fontWeight: 'bolder'}}/>}
 								size='large' style={{backgroundColor: 'white'}}/>
+								<span>Forget about spam, advertising mailings,
+									hacking and offensive robots. Keep your real mailbox
+									clean and secure. 10minsmail.com Mail provides temporary,
+									secure, anonymous, free, disposable email address.</span>
 						</Col>
 
 						<Col md={{span: 6}} xs={{span: 8}} >
@@ -45,6 +49,7 @@ function EmailGenerator(props: any ) {
 								<AnimatedButton title='Copy' icon={<Icon type='copy' />}/>
 								<AnimatedButton title='Refresh' icon={<Icon type='sync' />}/>
 								<AnimatedButton title='Delete' icon={<Icon type='delete' />}/>
+								<AnimatedButton title='Change' icon={<Icon type='delete' />}/>
 							</Row>
 						</Col>
 

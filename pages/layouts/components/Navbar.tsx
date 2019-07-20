@@ -37,13 +37,17 @@ function Navbar(props: { height }) {
 				<Row type='flex' justify='space-around'>
 
 					<Col md={{span: 8, order: 1}} xs={{span: 6, order: 2}}>
-						<Link href='/'>
-							<Icon component={AppIconSvg} style={{fontSize: '2.2em'}}/>
-						</Link>
+
 					</Col>
 
 					<Col md={{span: 8, order: 2}} xs={{span: 12, order: 1}}>
-						<h1 style={{textAlign: 'center'}}>{t('title')}</h1>
+						<h1 style={{textAlign: 'center', color: 'black'}}>
+							<Link href='/'>
+								<Icon component={AppIconSvg} style={{fontSize: '2em'}}/>
+							</Link>
+							&nbsp;
+							{t('title')}
+						</h1>
 					</Col>
 
 					<Col md={{span: 8, order: 3}} xs={{span: 6, order: 3}}>
