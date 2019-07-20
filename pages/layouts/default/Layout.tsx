@@ -1,16 +1,18 @@
-import { Row, Col, Affix } from 'antd';
+import { Row, Col, Affix, Layout } from 'antd';
 import Head from 'next/head';
 import { Fragment, Component, useState } from 'react';
+
+const { Content, Footer, Header } = Layout;
 
 import '../../../i18n';
 
 import Navbar from './Navbar';
-import Footer from './Footer';
+import Footbar from './Footbar';
 
 function DefaultLayout(props: {children: any, title?: string, description?: string}) {
 
 	return (
-		<Fragment>
+		<Layout>
 
 			<Head>
 				<title>{!!props.title ? props.title : 'Temp Mail App'}</title>
@@ -34,13 +36,18 @@ function DefaultLayout(props: {children: any, title?: string, description?: stri
 					max-width: 100% ;
 				}
 			`}</style>
-
-				<Affix offsetTop={0}>
-					<Navbar height='7vh' color='#ffffff'/>
-				</Affix>
+			<Affix offsetTop={0}>
+				<Header>
+					<Navbar height='7vh'/>
+				</Header>
+			</Affix>
+			<Content>
 				{props.children}
-				<Footer/>
-		</Fragment>
+			</Content>
+			<Footer>
+				<Footbar/>
+			</Footer>
+		</Layout>
 	);
 }
 DefaultLayout.getInitialProps = async ({req}) => {

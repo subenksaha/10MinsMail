@@ -6,8 +6,6 @@ import Adsense from '../components/Adsense';
 
 function MailBox() {
 
-	const theme = useContext(ThemeContext);
-
 	return (
 		<Row type='flex' style={{minHeight: '600px'}}>
 			<Col md={{span: 6}} xs={{span: 0}}>2</Col>
@@ -19,7 +17,7 @@ function MailBox() {
 					</Row>}
 					bordered={false}
 					extra={<Icon type='sync' spin/>}
-					style={{backgroundColor: theme.color2, minHeight: '600px'}}
+					style={{ minHeight: '600px'}}
 				>
 
 					<p>Card content</p>

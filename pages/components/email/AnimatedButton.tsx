@@ -17,11 +17,11 @@ const Box = posed.div({
 		boxShadow: '0px 2px 5px rgba(0,0,0,0.1)',
 	},
 });
-function AnimatedButton(props: {title: string, color: string, icon: any}) {
+function AnimatedButton(props: {title: string, icon: any}) {
 	const hw = '50px';
 	return(
-		<Box style={{minHeight: hw, minWidth: hw, lineHeight: hw,
-			borderBottom: '1px solid white', backgroundColor: props.color,
+		<Box color='#77A6F7' style={{minHeight: hw, minWidth: hw, lineHeight: hw,
+			borderBottom: '1px solid black',
 			cursor: 'pointer', fontSize: '1.2em',
 		}}>
 			{props.icon} &nbsp;

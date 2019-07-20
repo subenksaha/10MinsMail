@@ -1,8 +1,7 @@
 import { Fragment, useContext } from 'react';
-import { Row, Col, Button, Divider } from 'antd';
+import { Row, Col, Button, Divider, Layout } from 'antd';
+const { Footer } = Layout;
 import Link from 'next/link';
-
-import ThemeContext from '../../contexts/theme';
 
 const languages = {
 	ar: 'Arabic',
@@ -18,13 +17,10 @@ const languages = {
 	ja: 'Japanease',
 };
 
-function Footer(props: any) {
-	const Theme = useContext(ThemeContext);
+function Footbar(props: any) {
 
 	return (
-		<Row style={{ background:  `${Theme.color1}`, minHeight: '200px',
-		padding: '20px', flexDirection: 'row'}}>
-
+		<Fragment>
 			<Row type='flex' justify='space-around'>
 					<Col>Languages: </Col>
 				{
@@ -44,13 +40,13 @@ function Footer(props: any) {
 				<Button type='link' href='/tos'>Terms Of Service</Button>
 				<Button type='link' href='/contacts'>Contacts</Button>
 			</Row>
-		</Row>
+		</Fragment>
 	);
 }
 
-Footer.getInitialProps = async ({req}) => {
+Footbar.getInitialProps = async ({req}) => {
 	return {
 		namespacesRequired: ['common'],
 	};
 };
-export default Footer;
+export default Footbar;

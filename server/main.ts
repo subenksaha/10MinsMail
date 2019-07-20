@@ -13,7 +13,7 @@ async function bootstrap() {
 	await dotConfig();
 
 	const dev = process.env.NODE_ENV !== 'production';
-	const app = Next({ ...NextConfig, dev });
+	const app = Next({ dev, conf: NextConfig });
 
 	await app.prepare();
 

@@ -1,7 +1,5 @@
 const withTypescript = require("@zeit/next-typescript");
 const withLess = require('@zeit/next-less')
-const fs = require('fs')
-const path = require('path')
 
 // Where your antd-custom.less file lives
 module.exports = withTypescript(withLess({
@@ -10,13 +8,15 @@ module.exports = withTypescript(withLess({
     sourceMap: true,
     javascriptEnabled: true,
     modifyVars: {
-			"@primary-color": "#3AAFA9",
-			"@heading-color": "#FEFFFF",
-			"@text-color": "#DEF2F1",
-			"@text-color-secondary": "#FEFFFF",
-			"@disabled-color": "#000000",
-			"@body-background": "#3AAFA9",
-			"@component-background": "#3AAFA9"
+			"@color1": "#00887A",
+			"@color2": "#FFCCBC",
+			"@color3": "#FFFFFF",
+			"@color4": "#D3E3FC",
+			"@color5": "#77A6F7",
+			"@primary-color": "@color5",
+			"@heading-color": "@color1",
+			"@component-background": "@color4",
+			"@layout-header-background": "@color5"
     },
   },
   useFileSystemPublicRoutes: false,

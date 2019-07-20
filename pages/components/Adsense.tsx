@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { height } from 'styled-system';
 
 interface Props {
 	width: number;
