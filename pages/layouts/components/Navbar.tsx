@@ -1,6 +1,6 @@
 import { Component, Fragment, useContext } from 'react';
 import { Layout, Row, Col, Dropdown, Menu, Icon, Button } from 'antd';
-import { useTranslation } from '../../../i18n';
+import { useTranslation } from '../../i18n';
 const { Header, Footer, Sider, Content } = Layout;
 
 import Link from 'next/link';

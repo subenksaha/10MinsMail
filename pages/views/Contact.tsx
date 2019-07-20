@@ -8,7 +8,7 @@ import DefaultLayout from '../layouts/Default';
 function Contact(props: any) {
 
 	return (
-		<DefaultLayout description={metaDescription}>
+		<DefaultLayout description={'metaDescription'}>
 			<Head>
 				<title>{props.title}</title>
 				<meta name='description' content='Contact 10 mins mail'/>

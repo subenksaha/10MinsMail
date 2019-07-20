@@ -1,5 +1,5 @@
 import App, { Container } from 'next/app';
-import { appWithTranslation } from '../i18n';
+import { appWithTranslation } from './i18n';
 
 class MyApp extends App {
 	render() {

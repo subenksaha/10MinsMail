@@ -1,7 +1,7 @@
 import { Fragment, useContext } from 'react';
 import { Row, Col, Button, Divider, Layout } from 'antd';
 const { Footer } = Layout;
-import { Link } from '../../../i18n';
+import { Link } from '../../i18n';
 
 const languages = {
 	ar: 'Arabic',

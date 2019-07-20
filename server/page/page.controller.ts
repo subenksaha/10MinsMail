@@ -1,20 +1,9 @@
 import { Controller, Get, Render } from '@nestjs/common';
 import { PageService } from './page.service';
 
-@Controller()
+@Controller('')
 export class PageController {
 	constructor(private readonly appService: PageService) {}
-
-	@Get('/')
-	@Render('Home')
-	viewHome() {
-		const domains = process.env.DOMAINS.split(',');
-
-		return {
-			title: 'hello',
-			domains,
-		};
-	}
 
 	@Get('/privacy')
 	@Render('Privacy')
@@ -29,6 +18,17 @@ export class PageController {
 	viewContact() {
 		return {
 			title: 'Contact',
+		};
+	}
+	
+	@Get('/')
+	@Render('Home')
+	viewHome() {
+		const domains = process.env.DOMAINS.split(',');
+
+		return {
+			title: 'hello',
+			domains,
 		};
 	}
 }

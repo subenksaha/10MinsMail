@@ -5,9 +5,9 @@ import { RenderModule } from 'nest-next';
 import { config as dotConfig } from 'dotenv';
 
 import nextI18NextMiddleware from 'next-i18next/middleware';
-import nextI18next from '../i18n';
+import nextI18next from '../pages/i18n';
 
-import * as NextConfig from '../next.config';
+import * as NextConfig from '../pages/next.config';
 
 async function bootstrap() {
 	await dotConfig();
